@@ -472,3 +472,6 @@
 [submodule "vendor"]
 	path = vendor
 	url = https://gerrit.wikimedia.org/r/mediawiki/vendor
+[submodule "extensions/SemanticInternalObjects"]
+	path = extensions/SemanticInternalObjects
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/SemanticInternalObjects
