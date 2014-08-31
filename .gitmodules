@@ -475,3 +475,12 @@
 [submodule "extensions/SemanticInternalObjects"]
 	path = extensions/SemanticInternalObjects
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/SemanticInternalObjects
+[submodule "extensions/LookupUser"]
+	path = extensions/LookupUser
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/LookupUser
+[submodule "extensions/NewSignupPage"]
+	path = extensions/NewSignupPage
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/NewSignupPage
+[submodule "extensions/StringFunctionsEscaped"]
+	path = extensions/StringFunctionsEscaped
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/StringFunctionsEscaped
