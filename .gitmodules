@@ -484,3 +484,9 @@
 [submodule "extensions/StringFunctionsEscaped"]
 	path = extensions/StringFunctionsEscaped
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/StringFunctionsEscaped
+[submodule "extensions/WebPlatformAuth"]
+	path = extensions/WebPlatformAuth
+	url = https://github.com/webplatform/mediawiki-fxa-sso.git
+[submodule "extensions/WebPlatformDocs"]
+	path = extensions/WebPlatformDocs
+	url = https://github.com/webplatform/mediawiki.git
