@@ -493,3 +493,6 @@
 [submodule "extensions/Comments"]
 	path = extensions/Comments
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Comments
+[submodule "extensions/AdminLinks"]
+	path = extensions/AdminLinks
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/AdminLinks
