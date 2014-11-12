@@ -496,3 +496,6 @@
 [submodule "extensions/AdminLinks"]
 	path = extensions/AdminLinks
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/AdminLinks
+[submodule "extensions/SocialProfile"]
+	path = extensions/SocialProfile
+	url = https://git.wikimedia.org/git/mediawiki/extensions/SocialProfile.git
