@@ -1,0 +1,48 @@
+From 96e26f0eacbae181cd6c0c885808b5a9e7aa0ee1 Mon Sep 17 00:00:00 2001
+From: Renoir Boulanger <renoir@w3.org>
+Date: Wed, 12 Nov 2014 13:05:35 -0500
+Subject: [PATCH] Disabling avatar upload and display (issue 19)
+
+---
+ UserProfile/AvatarClass.php         | 6 +++++-
+ UserProfile/SpecialUploadAvatar.php | 7 ++++++-
+ 2 files changed, 11 insertions(+), 2 deletions(-)
+
+diff --git a/UserProfile/AvatarClass.php b/UserProfile/AvatarClass.php
+index 0e8b7ed..0cf6585 100644
+--- a/UserProfile/AvatarClass.php
++++ b/UserProfile/AvatarClass.php
+@@ -65,7 +65,11 @@ class wAvatar {
+ 			'src' => "{$wgUploadPath}/avatars/{$this->getAvatarImage()}",
+ 			'alt' => 'avatar',
+ 			'border' => '0',
+-		);
++    );
++
++$defaultParams['src'] = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'; // Monkey patching need for GlusterFS VM
++$defaultParams['style'] = 'border-width:0;display:none;';
++
+ 		$params = array_merge( $extraParams, $defaultParams );
+
+ 		return Html::element( 'img', $params, '' );
+diff --git a/UserProfile/SpecialUploadAvatar.php b/UserProfile/SpecialUploadAvatar.php
+index c428f19..665d779 100644
+--- a/UserProfile/SpecialUploadAvatar.php
++++ b/UserProfile/SpecialUploadAvatar.php
+@@ -216,7 +216,12 @@ class SpecialUploadAvatar extends SpecialUpload {
+ 			</table>
+ 			</form>' . "\n";
+
+-		$output .= '</div>';
++    $output .= '</div>';
++
++// Disabling file uploads see https://github.com/webplatform/mediawiki/issues/19
++$output  = '<div class="nmbox languages" style="padding:10px;"><strong>Apologies</strong>';
++$output .= ' Profile image uploads are disabled. If you want the feature back, you <a ';
++$output .= 'href="https://github.com/webplatform/mediawiki/issues/19">can vote this issue up</a>.</div>';
+
+ 		return $output;
+ 	}
+--
+1.9.3 (Apple Git-50)
+
