@@ -1,30 +1,31 @@
-From 96e26f0eacbae181cd6c0c885808b5a9e7aa0ee1 Mon Sep 17 00:00:00 2001
-From: Renoir Boulanger <renoir@w3.org>
-Date: Wed, 12 Nov 2014 13:05:35 -0500
-Subject: [PATCH] Disabling avatar upload and display (issue 19)
-
----
- UserProfile/AvatarClass.php         | 6 +++++-
- UserProfile/SpecialUploadAvatar.php | 7 ++++++-
- 2 files changed, 11 insertions(+), 2 deletions(-)
-
 diff --git a/UserProfile/AvatarClass.php b/UserProfile/AvatarClass.php
-index 0e8b7ed..0cf6585 100644
+index 0e8b7ed..e7b9d30 100644
 --- a/UserProfile/AvatarClass.php
 +++ b/UserProfile/AvatarClass.php
-@@ -65,7 +65,11 @@ class wAvatar {
- 			'src' => "{$wgUploadPath}/avatars/{$this->getAvatarImage()}",
+@@ -66,6 +66,10 @@ class wAvatar {
  			'alt' => 'avatar',
  			'border' => '0',
--		);
-+    );
+ 		);
 +
-+$defaultParams['src'] = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'; // Monkey patching need for GlusterFS VM
-+$defaultParams['style'] = 'border-width:0;display:none;';
++		$defaultParams['src'] = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'; // Disabling image feature
++		$defaultParams['style'] = 'border-width:0;display:none;';
 +
  		$params = array_merge( $extraParams, $defaultParams );
 
  		return Html::element( 'img', $params, '' );
+diff --git a/UserProfile/SpecialUpdateProfile.php b/UserProfile/SpecialUpdateProfile.php
+index 3ef038c..28f7ca0 100644
+--- a/UserProfile/SpecialUpdateProfile.php
++++ b/UserProfile/SpecialUpdateProfile.php
+@@ -106,6 +106,8 @@ class SpecialUpdateProfile extends UnlistedSpecialPage {
+ 				}
+ 			}
+
++$can_create = ($user->isAllowed('createpage'))?true:$can_create; // Please also allow internal RBx
++
+ 			// Boo, go away!
+ 			if ( $can_create == false ) {
+ 				global $wgSupressPageTitle;
 diff --git a/UserProfile/SpecialUploadAvatar.php b/UserProfile/SpecialUploadAvatar.php
 index c428f19..665d779 100644
 --- a/UserProfile/SpecialUploadAvatar.php
@@ -43,6 +44,15 @@ index c428f19..665d779 100644
 
  		return $output;
  	}
---
-1.9.3 (Apple Git-50)
-
+diff --git a/UserProfile/i18n/en.json b/UserProfile/i18n/en.json
+index e7295a0..e786833 100644
+--- a/UserProfile/i18n/en.json
++++ b/UserProfile/i18n/en.json
+@@ -164,6 +164,7 @@
+ 	"user-profile-userlevels-link": "User levels",
+ 	"user-profile-create-threshold-title": "Create user profile",
+ 	"user-profile-create-threshold-edits": "{{PLURAL:$1|one edit|$1 edits}}",
++	"user-profile-create-threshold-bogus": "enough edits to create pages. Once you have made enough, you will be granted access to this feature.",
+ 	"user-profile-create-threshold-votes": "{{PLURAL:$1|one vote|$1 votes}}",
+ 	"user-profile-create-threshold-comments": "{{PLURAL:$1|one comment|$1 comments}}",
+ 	"user-profile-create-threshold-comment-score-plus": "{{PLURAL:$1|one thumbs up|$1 thumbs up}}",

@@ -499,3 +499,6 @@
 [submodule "extensions/SocialProfile"]
 	path = extensions/SocialProfile
 	url = https://git.wikimedia.org/git/mediawiki/extensions/SocialProfile.git
+[submodule "extensions/WebPlatformSearchAutocomplete"]
+	path = extensions/WebPlatformSearchAutocomplete 
+	url = git@source.webplatform.org:WebPlatformSearchAutocomplete.git
