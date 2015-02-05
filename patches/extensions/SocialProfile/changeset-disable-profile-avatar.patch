@@ -1,0 +1,115 @@
+From 5c4e3dd89851459b0790be086b334b8816f115ca Mon Sep 17 00:00:00 2001
+From: Renoir Boulanger <renoir@w3.org>
+Date: Thu, 29 Jan 2015 16:35:04 -0500
+Subject: [PATCH] Ability to disable profile avatar display & upload
+
+In a case where the wiki uses the SwiftCloudFiles extension and
+do not want to support network mounts, SocialProfile would break avatar images.
+
+This patchset allows to disable image upload and display feature.
+
+To disable:
+
+$wgUserProfileDisplay['avatar'] = false;
+
+Change-Id: Icf16618279b83693e1681f6a4efa12d6dd50e467
+---
+ SocialProfile.php                   |  1 +
+ UserProfile/AvatarClass.php         |  8 +++++++-
+ UserProfile/SpecialUploadAvatar.php | 10 +++++++++-
+ i18n/en.json                        |  3 ++-
+ i18n/fr.json                        |  3 ++-
+ 5 files changed, 21 insertions(+), 4 deletions(-)
+
+diff --git a/SocialProfile.php b/SocialProfile.php
+index afec7d9..ba795e4 100644
+--- a/SocialProfile.php
++++ b/SocialProfile.php
+@@ -91,6 +91,7 @@ require_once( "$IP/extensions/SocialProfile/UserRelationship/Relationship_AjaxFu
+ $wgUserProfileDisplay['board'] = true;
+ $wgUserProfileDisplay['foes'] = true;
+ $wgUserProfileDisplay['friends'] = true;
++$wgUserProfileDisplay['avatar'] = true; // If set to false, disables both avatar display and upload
+ 
+ // Should we display UserBoard-related things on social profile pages?
+ $wgUserBoard = true;
+diff --git a/UserProfile/AvatarClass.php b/UserProfile/AvatarClass.php
+index ac79e4d..e7139c3 100644
+--- a/UserProfile/AvatarClass.php
++++ b/UserProfile/AvatarClass.php
+@@ -59,13 +59,19 @@ class wAvatar {
+ 	 * @return String: <img> HTML tag with full path to the avatar image
+ 	 * */
+ 	function getAvatarURL( $extraParams = array() ) {
+-		global $wgUploadPath;
++		global $wgUploadPath, $wgUserProfileDisplay;
+ 
+ 		$defaultParams = array(
+ 			'src' => "{$wgUploadPath}/avatars/{$this->getAvatarImage()}",
+ 			'alt' => 'avatar',
+ 			'border' => '0',
+ 		);
++
++		if ( $wgUserProfileDisplay['avatar'] === false ) {
++			$defaultParams['src'] = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'; // Replace by a white pixel
++			$defaultParams['style'] = 'border-width:0;display:none;';
++		}
++
+ 		$params = array_merge( $extraParams, $defaultParams );
+ 
+ 		return Html::element( 'img', $params, '' );
+diff --git a/UserProfile/SpecialUploadAvatar.php b/UserProfile/SpecialUploadAvatar.php
+index d2404ab..e46f129 100644
+--- a/UserProfile/SpecialUploadAvatar.php
++++ b/UserProfile/SpecialUploadAvatar.php
+@@ -143,7 +143,11 @@ class SpecialUploadAvatar extends SpecialUpload {
+ 	 * @return HTML output
+ 	 */
+ 	protected function getUploadForm( $message = '', $sessionKey = '', $hideIgnoreWarning = false ) {
+-		global $wgUseCopyrightUpload;
++		global $wgUseCopyrightUpload, $wgUserProfileDisplay;
++
++		if ( $wgUserProfileDisplay['avatar'] === false ) {
++			$message = $this->msg( 'socialprofile-uploads-disabled' )->plain();
++		}
+ 
+ 		if ( $message != '' ) {
+ 			$sub = $this->msg( 'uploaderror' )->plain();
+@@ -151,6 +155,10 @@ class SpecialUploadAvatar extends SpecialUpload {
+ 				"<h4 class='error'>{$message}</h4>\n" );
+ 		}
+ 
++		if ( $wgUserProfileDisplay['avatar'] === false ) {
++			return '';
++		}
++
+ 		$ulb = $this->msg( 'uploadbtn' );
+ 
+ 		$source = null;
+diff --git a/i18n/en.json b/i18n/en.json
+index 54a7911..bd0675b 100644
+--- a/i18n/en.json
++++ b/i18n/en.json
+@@ -2,5 +2,6 @@
+ 	"@metadata": {
+ 		"authors": []
+ 	},
+-	"socialprofile-desc": "A set of social tools for MediaWiki"
++	"socialprofile-desc": "A set of social tools for MediaWiki",
++	"socialprofile-uploads-disabled": "The avatar upload feature is disabled"
+ }
+diff --git a/i18n/fr.json b/i18n/fr.json
+index ef1c1db..198edc8 100644
+--- a/i18n/fr.json
++++ b/i18n/fr.json
+@@ -4,5 +4,6 @@
+ 			"Gomoko"
+ 		]
+ 	},
+-	"socialprofile-desc": "Un ensemble d’outils sociaux pour MédiaWiki"
++	"socialprofile-desc": "Un ensemble d’outils sociaux pour MédiaWiki",
++	"socialprofile-uploads-disabled": "La fonctionalité permettant d’utiliser un avatar a été désactivée."
+ }
+-- 
+1.9.3 (Apple Git-50)
+

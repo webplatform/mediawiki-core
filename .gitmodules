@@ -1,483 +1,513 @@
 [submodule "extensions/CentralNotice"]
 	path = extensions/CentralNotice
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/CentralNotice.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/CentralNotice.git
 [submodule "extensions/DonationInterface"]
 	path = extensions/DonationInterface
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/DonationInterface.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/DonationInterface.git
 [submodule "extensions/Wikidata"]
 	path = extensions/Wikidata
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Wikidata.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Wikidata.git
 [submodule "extensions/SemanticMediaWiki"]
 	path = extensions/SemanticMediaWiki
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/SemanticMediaWiki.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/SemanticMediaWiki.git
 [submodule "extensions/SemanticResultFormats"]
 	path = extensions/SemanticResultFormats
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/SemanticResultFormats.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/SemanticResultFormats.git
 [submodule "extensions/Validator"]
 	path = extensions/Validator
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Validator.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Validator.git
 [submodule "extensions/AbuseFilter"]
 	path = extensions/AbuseFilter
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/AbuseFilter.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/AbuseFilter.git
 [submodule "extensions/AccountAudit"]
 	path = extensions/AccountAudit
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/AccountAudit.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/AccountAudit.git
 [submodule "extensions/ActiveAbstract"]
 	path = extensions/ActiveAbstract
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/ActiveAbstract.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/ActiveAbstract.git
 [submodule "extensions/AntiSpoof"]
 	path = extensions/AntiSpoof
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/AntiSpoof.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/AntiSpoof.git
 [submodule "extensions/ApiSandbox"]
 	path = extensions/ApiSandbox
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/ApiSandbox.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/ApiSandbox.git
 [submodule "extensions/Babel"]
 	path = extensions/Babel
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Babel.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Babel.git
 [submodule "extensions/BetaFeatures"]
 	path = extensions/BetaFeatures
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/BetaFeatures.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/BetaFeatures.git
 [submodule "extensions/BounceHandler"]
 	path = extensions/BounceHandler
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/BounceHandler.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/BounceHandler.git
 [submodule "extensions/Calendar"]
 	path = extensions/Calendar
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Calendar.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Calendar.git
 [submodule "extensions/Campaigns"]
 	path = extensions/Campaigns
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Campaigns.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Campaigns.git
 [submodule "extensions/CategoryTree"]
 	path = extensions/CategoryTree
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/CategoryTree.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/CategoryTree.git
 [submodule "extensions/CentralAuth"]
 	path = extensions/CentralAuth
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/CentralAuth.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/CentralAuth.git
 [submodule "extensions/CharInsert"]
 	path = extensions/CharInsert
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/CharInsert.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/CharInsert.git
 [submodule "extensions/CheckUser"]
 	path = extensions/CheckUser
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/CheckUser.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/CheckUser.git
 [submodule "extensions/CirrusSearch"]
 	path = extensions/CirrusSearch
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/CirrusSearch.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/CirrusSearch.git
 [submodule "extensions/Cite"]
 	path = extensions/Cite
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Cite.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Cite.git
 [submodule "extensions/CiteThisPage"]
 	path = extensions/CiteThisPage
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/CiteThisPage.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/CiteThisPage.git
 [submodule "extensions/cldr"]
 	path = extensions/cldr
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/cldr.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/cldr.git
 [submodule "extensions/CleanChanges"]
 	path = extensions/CleanChanges
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/CleanChanges.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/CleanChanges.git
 [submodule "extensions/CodeEditor"]
 	path = extensions/CodeEditor
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/CodeEditor.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/CodeEditor.git
 [submodule "extensions/CodeReview"]
 	path = extensions/CodeReview
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/CodeReview.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/CodeReview.git
 [submodule "extensions/Collection"]
 	path = extensions/Collection
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Collection.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Collection.git
 [submodule "extensions/CommonsMetadata"]
 	path = extensions/CommonsMetadata
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/CommonsMetadata.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/CommonsMetadata.git
 [submodule "extensions/ConfirmEdit"]
 	path = extensions/ConfirmEdit
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/ConfirmEdit.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/ConfirmEdit.git
 [submodule "extensions/ContactPage"]
 	path = extensions/ContactPage
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/ContactPage.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/ContactPage.git
 [submodule "extensions/ContentTranslation"]
 	path = extensions/ContentTranslation
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/ContentTranslation.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/ContentTranslation.git
 [submodule "extensions/ContributionTracking"]
 	path = extensions/ContributionTracking
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/ContributionTracking.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/ContributionTracking.git
 [submodule "extensions/CreditsSource"]
 	path = extensions/CreditsSource
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/CreditsSource.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/CreditsSource.git
 [submodule "extensions/CustomData"]
 	path = extensions/CustomData
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/CustomData.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/CustomData.git
 [submodule "extensions/DisableAccount"]
 	path = extensions/DisableAccount
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/DisableAccount.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/DisableAccount.git
 [submodule "extensions/Disambiguator"]
 	path = extensions/Disambiguator
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Disambiguator.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Disambiguator.git
 [submodule "extensions/DismissableSiteNotice"]
 	path = extensions/DismissableSiteNotice
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/DismissableSiteNotice.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/DismissableSiteNotice.git
 [submodule "extensions/DoubleWiki"]
 	path = extensions/DoubleWiki
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/DoubleWiki.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/DoubleWiki.git
 [submodule "extensions/DynamicSidebar"]
 	path = extensions/DynamicSidebar
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/DynamicSidebar.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/DynamicSidebar.git
 [submodule "extensions/Echo"]
 	path = extensions/Echo
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Echo.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Echo.git
 [submodule "extensions/EducationProgram"]
 	path = extensions/EducationProgram
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/EducationProgram.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/EducationProgram.git
 [submodule "extensions/Elastica"]
 	path = extensions/Elastica
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Elastica.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Elastica.git
 [submodule "extensions/EventLogging"]
 	path = extensions/EventLogging
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/EventLogging.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/EventLogging.git
 [submodule "extensions/ExtensionDistributor"]
 	path = extensions/ExtensionDistributor
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/ExtensionDistributor.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/ExtensionDistributor.git
 [submodule "extensions/FeaturedFeeds"]
 	path = extensions/FeaturedFeeds
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/FeaturedFeeds.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/FeaturedFeeds.git
 [submodule "extensions/FlaggedRevs"]
 	path = extensions/FlaggedRevs
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/FlaggedRevs.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/FlaggedRevs.git
 [submodule "extensions/Flow"]
 	path = extensions/Flow
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Flow.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Flow.git
 [submodule "extensions/FundraiserLandingPage"]
 	path = extensions/FundraiserLandingPage
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/FundraiserLandingPage.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/FundraiserLandingPage.git
 [submodule "extensions/FundraisingTranslateWorkflow"]
 	path = extensions/FundraisingTranslateWorkflow
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/FundraisingTranslateWorkflow.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/FundraisingTranslateWorkflow.git
 [submodule "extensions/Gadgets"]
 	path = extensions/Gadgets
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Gadgets.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Gadgets.git
 [submodule "extensions/GeoCrumbs"]
 	path = extensions/GeoCrumbs
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/GeoCrumbs.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/GeoCrumbs.git
 [submodule "extensions/GeoData"]
 	path = extensions/GeoData
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/GeoData.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/GeoData.git
 [submodule "extensions/GettingStarted"]
 	path = extensions/GettingStarted
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/GettingStarted.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/GettingStarted.git
 [submodule "extensions/Graph"]
 	path = extensions/Graph
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Graph.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Graph.git
 [submodule "extensions/GlobalBlocking"]
 	path = extensions/GlobalBlocking
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/GlobalBlocking.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/GlobalBlocking.git
 [submodule "extensions/GlobalCssJs"]
 	path = extensions/GlobalCssJs
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/GlobalCssJs.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/GlobalCssJs.git
 [submodule "extensions/GlobalUsage"]
 	path = extensions/GlobalUsage
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/GlobalUsage.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/GlobalUsage.git
 [submodule "extensions/GoogleNewsSitemap"]
 	path = extensions/GoogleNewsSitemap
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/GoogleNewsSitemap.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/GoogleNewsSitemap.git
 [submodule "extensions/GuidedTour"]
 	path = extensions/GuidedTour
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/GuidedTour.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/GuidedTour.git
 [submodule "extensions/GWToolset"]
 	path = extensions/GWToolset
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/GWToolset.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/GWToolset.git
 [submodule "extensions/ImageMap"]
 	path = extensions/ImageMap
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/ImageMap.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/ImageMap.git
 [submodule "extensions/ImageMetrics"]
 	path = extensions/ImageMetrics
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/ImageMetrics.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/ImageMetrics.git
 [submodule "extensions/InputBox"]
 	path = extensions/InputBox
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/InputBox.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/InputBox.git
 [submodule "extensions/Insider"]
 	path = extensions/Insider
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Insider.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Insider.git
 [submodule "extensions/intersection"]
 	path = extensions/intersection
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/intersection.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/intersection.git
 [submodule "extensions/Interwiki"]
 	path = extensions/Interwiki
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Interwiki.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Interwiki.git
 [submodule "extensions/JsonConfig"]
 	path = extensions/JsonConfig
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/JsonConfig.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/JsonConfig.git
 [submodule "extensions/LabeledSectionTransclusion"]
 	path = extensions/LabeledSectionTransclusion
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/LabeledSectionTransclusion.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/LabeledSectionTransclusion.git
 [submodule "extensions/LandingCheck"]
 	path = extensions/LandingCheck
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/LandingCheck.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/LandingCheck.git
 [submodule "extensions/LdapAuthentication"]
 	path = extensions/LdapAuthentication
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/LdapAuthentication.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/LdapAuthentication.git
 [submodule "extensions/LiquidThreads"]
 	path = extensions/LiquidThreads
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/LiquidThreads.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/LiquidThreads.git
 [submodule "extensions/Listings"]
 	path = extensions/Listings
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Listings.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Listings.git
 [submodule "extensions/LocalisationUpdate"]
 	path = extensions/LocalisationUpdate
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/LocalisationUpdate.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/LocalisationUpdate.git
 [submodule "extensions/Mantle"]
 	path = extensions/Mantle
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Mantle.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Mantle.git
 [submodule "extensions/MapSources"]
 	path = extensions/MapSources
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/MapSources.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/MapSources.git
 [submodule "extensions/MarkAsHelpful"]
 	path = extensions/MarkAsHelpful
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/MarkAsHelpful.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/MarkAsHelpful.git
 [submodule "extensions/MassMessage"]
 	path = extensions/MassMessage
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/MassMessage.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/MassMessage.git
 [submodule "extensions/Math"]
 	path = extensions/Math
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Math.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Math.git
 [submodule "extensions/MobileApp"]
 	path = extensions/MobileApp
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/MobileApp.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/MobileApp.git
 [submodule "extensions/MobileFrontend"]
 	path = extensions/MobileFrontend
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/MobileFrontend.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/MobileFrontend.git
 [submodule "extensions/MoodBar"]
 	path = extensions/MoodBar
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/MoodBar.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/MoodBar.git
 [submodule "extensions/MultimediaViewer"]
 	path = extensions/MultimediaViewer
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/MultimediaViewer.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/MultimediaViewer.git
 [submodule "extensions/MwEmbedSupport"]
 	path = extensions/MwEmbedSupport
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/MwEmbedSupport.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/MwEmbedSupport.git
 [submodule "extensions/NavigationTiming"]
 	path = extensions/NavigationTiming
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/NavigationTiming.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/NavigationTiming.git
 [submodule "extensions/NewUserMessage"]
 	path = extensions/NewUserMessage
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/NewUserMessage.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/NewUserMessage.git
 [submodule "extensions/Nuke"]
 	path = extensions/Nuke
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Nuke.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Nuke.git
 [submodule "extensions/OAuth"]
 	path = extensions/OAuth
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/OAuth.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/OAuth.git
 [submodule "extensions/OAI"]
 	path = extensions/OAI
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/OAI.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/OAI.git
 [submodule "extensions/OATHAuth"]
 	path = extensions/OATHAuth
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/OATHAuth.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/OATHAuth.git
 [submodule "extensions/OpenStackManager"]
 	path = extensions/OpenStackManager
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/OpenStackManager.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/OpenStackManager.git
 [submodule "extensions/Oversight"]
 	path = extensions/Oversight
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Oversight.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Oversight.git
 [submodule "extensions/PagedTiffHandler"]
 	path = extensions/PagedTiffHandler
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/PagedTiffHandler.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/PagedTiffHandler.git
 [submodule "extensions/PageImages"]
 	path = extensions/PageImages
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/PageImages.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/PageImages.git
 [submodule "extensions/PageTriage"]
 	path = extensions/PageTriage
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/PageTriage.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/PageTriage.git
 [submodule "extensions/ParserFunctions"]
 	path = extensions/ParserFunctions
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/ParserFunctions.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/ParserFunctions.git
 [submodule "extensions/Parsoid"]
 	path = extensions/Parsoid
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Parsoid.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Parsoid.git
 [submodule "extensions/PdfHandler"]
 	path = extensions/PdfHandler
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/PdfHandler.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/PdfHandler.git
 [submodule "extensions/Petition"]
 	path = extensions/Petition
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Petition.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Petition.git
 [submodule "extensions/Poem"]
 	path = extensions/Poem
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Poem.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Poem.git
 [submodule "extensions/PoolCounter"]
 	path = extensions/PoolCounter
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/PoolCounter.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/PoolCounter.git
 [submodule "extensions/Popups"]
 	path = extensions/Popups
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Popups.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Popups.git
 [submodule "extensions/ProofreadPage"]
 	path = extensions/ProofreadPage
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/ProofreadPage.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/ProofreadPage.git
 [submodule "extensions/Quiz"]
 	path = extensions/Quiz
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Quiz.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Quiz.git
 [submodule "extensions/RandomRootPage"]
 	path = extensions/RandomRootPage
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/RandomRootPage.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/RandomRootPage.git
 [submodule "extensions/RelatedArticles"]
 	path = extensions/RelatedArticles
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/RelatedArticles.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/RelatedArticles.git
 [submodule "extensions/RelatedSites"]
 	path = extensions/RelatedSites
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/RelatedSites.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/RelatedSites.git
 [submodule "extensions/Renameuser"]
 	path = extensions/Renameuser
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Renameuser.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Renameuser.git
 [submodule "extensions/RSS"]
 	path = extensions/RSS
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/RSS.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/RSS.git
 [submodule "extensions/Scribunto"]
 	path = extensions/Scribunto
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Scribunto.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Scribunto.git
 [submodule "extensions/Score"]
 	path = extensions/Score
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Score.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Score.git
 [submodule "extensions/SearchExtraNS"]
 	path = extensions/SearchExtraNS
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/SearchExtraNS.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/SearchExtraNS.git
 [submodule "extensions/SecurePoll"]
 	path = extensions/SecurePoll
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/SecurePoll.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/SecurePoll.git
 [submodule "extensions/ShortUrl"]
 	path = extensions/ShortUrl
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/ShortUrl.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/ShortUrl.git
 [submodule "extensions/SiteMatrix"]
 	path = extensions/SiteMatrix
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/SiteMatrix.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/SiteMatrix.git
 [submodule "extensions/Solarium"]
 	path = extensions/Solarium
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Solarium.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Solarium.git
 [submodule "extensions/SpamBlacklist"]
 	path = extensions/SpamBlacklist
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/SpamBlacklist.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/SpamBlacklist.git
 [submodule "extensions/StrategyWiki"]
 	path = extensions/StrategyWiki
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/StrategyWiki.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/StrategyWiki.git
 [submodule "extensions/SubPageList3"]
 	path = extensions/SubPageList3
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/SubPageList3.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/SubPageList3.git
 [submodule "extensions/SubpageSortkey"]
 	path = extensions/SubpageSortkey
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/SubpageSortkey.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/SubpageSortkey.git
 [submodule "extensions/SwiftCloudFiles"]
 	path = extensions/SwiftCloudFiles
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/SwiftCloudFiles.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/SwiftCloudFiles.git
 [submodule "extensions/SyntaxHighlight_GeSHi"]
 	path = extensions/SyntaxHighlight_GeSHi
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/SyntaxHighlight_GeSHi.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/SyntaxHighlight_GeSHi.git
 [submodule "extensions/TemplateData"]
 	path = extensions/TemplateData
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/TemplateData.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/TemplateData.git
 [submodule "extensions/TemplateSandbox"]
 	path = extensions/TemplateSandbox
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/TemplateSandbox.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/TemplateSandbox.git
 [submodule "extensions/TextExtracts"]
 	path = extensions/TextExtracts
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/TextExtracts.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/TextExtracts.git
 [submodule "extensions/Thanks"]
 	path = extensions/Thanks
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Thanks.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Thanks.git
 [submodule "extensions/TimedMediaHandler"]
 	path = extensions/TimedMediaHandler
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/TimedMediaHandler.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/TimedMediaHandler.git
 [submodule "extensions/timeline"]
 	path = extensions/timeline
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/timeline.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/timeline.git
 [submodule "extensions/TitleBlacklist"]
 	path = extensions/TitleBlacklist
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/TitleBlacklist.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/TitleBlacklist.git
 [submodule "extensions/TitleKey"]
 	path = extensions/TitleKey
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/TitleKey.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/TitleKey.git
 [submodule "extensions/TocTree"]
 	path = extensions/TocTree
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/TocTree.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/TocTree.git
 [submodule "extensions/TorBlock"]
 	path = extensions/TorBlock
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/TorBlock.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/TorBlock.git
 [submodule "extensions/Translate"]
 	path = extensions/Translate
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/Translate.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/Translate.git
 [submodule "extensions/TranslationNotifications"]
 	path = extensions/TranslationNotifications
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/TranslationNotifications.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/TranslationNotifications.git
 [submodule "extensions/TrustedXFF"]
 	path = extensions/TrustedXFF
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/TrustedXFF.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/TrustedXFF.git
 [submodule "extensions/UnicodeConverter"]
 	path = extensions/UnicodeConverter
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/UnicodeConverter.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/UnicodeConverter.git
 [submodule "extensions/UniversalLanguageSelector"]
 	path = extensions/UniversalLanguageSelector
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/UniversalLanguageSelector.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/UniversalLanguageSelector.git
 [submodule "extensions/UploadWizard"]
 	path = extensions/UploadWizard
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/UploadWizard.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/UploadWizard.git
 [submodule "extensions/UserDailyContribs"]
 	path = extensions/UserDailyContribs
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/UserDailyContribs.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/UserDailyContribs.git
 [submodule "extensions/UserMerge"]
 	path = extensions/UserMerge
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/UserMerge.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/UserMerge.git
 [submodule "extensions/VectorBeta"]
 	path = extensions/VectorBeta
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/VectorBeta.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/VectorBeta.git
 [submodule "extensions/VipsScaler"]
 	path = extensions/VipsScaler
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/VipsScaler.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/VipsScaler.git
 [submodule "extensions/VisualEditor"]
 	path = extensions/VisualEditor
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/VisualEditor.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/VisualEditor.git
 [submodule "extensions/WikiEditor"]
 	path = extensions/WikiEditor
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/WikiEditor.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/WikiEditor.git
 [submodule "extensions/WikiGrok"]
 	path = extensions/WikiGrok
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/WikiGrok.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/WikiGrok.git
 [submodule "extensions/wikihiero"]
 	path = extensions/wikihiero
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/wikihiero.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/wikihiero.git
 [submodule "extensions/WikiLove"]
 	path = extensions/WikiLove
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/WikiLove.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/WikiLove.git
 [submodule "extensions/WikimediaEvents"]
 	path = extensions/WikimediaEvents
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/WikimediaEvents.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/WikimediaEvents.git
 [submodule "extensions/WikimediaIncubator"]
 	path = extensions/WikimediaIncubator
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/WikimediaIncubator.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/WikimediaIncubator.git
 [submodule "extensions/WikimediaMaintenance"]
 	path = extensions/WikimediaMaintenance
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/WikimediaMaintenance.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/WikimediaMaintenance.git
 [submodule "extensions/WikimediaMessages"]
 	path = extensions/WikimediaMessages
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/WikimediaMessages.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/WikimediaMessages.git
 [submodule "extensions/ZeroBanner"]
 	path = extensions/ZeroBanner
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/ZeroBanner.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/ZeroBanner.git
 [submodule "extensions/ZeroPortal"]
 	path = extensions/ZeroPortal
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/ZeroPortal.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/ZeroPortal.git
 [submodule "extensions/SemanticForms"]
 	path = extensions/SemanticForms
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/SemanticForms.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/SemanticForms.git
 [submodule "skins/CologneBlue"]
 	path = skins/CologneBlue
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/skins/CologneBlue.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/skins/CologneBlue.git
 [submodule "skins/MonoBook"]
 	path = skins/MonoBook
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/skins/MonoBook.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/skins/MonoBook.git
 [submodule "skins/Modern"]
 	path = skins/Modern
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/skins/Modern.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/skins/Modern.git
 [submodule "skins/Nostalgia"]
 	path = skins/Nostalgia
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/skins/Nostalgia.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/skins/Nostalgia.git
 [submodule "skins/Vector"]
 	path = skins/Vector
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/skins/Vector.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/skins/Vector.git
 [submodule "vendor"]
 	path = vendor
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/vendor.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/vendor.git
 [submodule "extensions/XAnalytics"]
 	path = extensions/XAnalytics
-	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/XAnalytics.git
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/XAnalytics.git
+[submodule "extensions/NewSignupPage"]
+	path = extensions/NewSignupPage
+	url = https://git.wikimedia.org/git/mediawiki/extensions/NewSignupPage
+[submodule "extensions/StringFunctionsEscaped"]
+	path = extensions/StringFunctionsEscaped
+	url = https://git.wikimedia.org/git/mediawiki/extensions/StringFunctionsEscaped
+[submodule "extensions/LookupUser"]
+	path = extensions/LookupUser
+	url = https://git.wikimedia.org/git/mediawiki/extensions/LookupUser
+[submodule "extensions/SemanticInternalObjects"]
+	path = extensions/SemanticInternalObjects
+	url = https://git.wikimedia.org/git/mediawiki/extensions/SemanticInternalObjects
+[submodule "extensions/SocialProfile"]
+	path = extensions/SocialProfile
+	url = https://git.wikimedia.org/git/mediawiki/extensions/SocialProfile
+[submodule "extensions/AdminLinks"]
+	path = extensions/AdminLinks
+	url = https://git.wikimedia.org/git/mediawiki/extensions/AdminLinks
+[submodule "extensions/WebPlatformSearchAutocomplete"]
+	path = extensions/WebPlatformSearchAutocomplete
+	url = https://git.wikimedia.org/git/mediawiki/extensions/WebPlatformSearchAutocomplete
+[submodule "extensions/ConfirmAccount"]
+	path = extensions/ConfirmAccount
+	url = https://git.wikimedia.org/git/mediawiki/extensions/ConfirmAccount
+[submodule "extensions/WebPlatformMediaWikiExtensionBundle"]
+	path = extensions/WebPlatformMediaWikiExtensionBundle
+	url = https://github.com/webplatform/mediawiki.git
+[submodule "extensions/AccountRelier"]
+	path = extensions/AccountRelier
+	url = https://github.com/webplatform/mediawiki-fxa-sso.git

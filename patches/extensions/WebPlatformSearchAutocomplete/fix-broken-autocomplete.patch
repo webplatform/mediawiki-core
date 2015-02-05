@@ -1,0 +1,227 @@
+From 3b1f177b5071bc5828ef2622be93bff25cc9848e Mon Sep 17 00:00:00 2001
+From: Renoir Boulanger <renoir@w3.org>
+Date: Thu, 29 Jan 2015 16:52:28 -0500
+Subject: [PATCH] Fix broken autocomplete handler
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+When we try to search for terms, in the autocomplete results, we couldn’t navigate to a displayed choice.
+
+... and what was on webplatform.org but not source controlled and things that are broken in current MW version.
+
+Change-Id: Ie7d6941510adb0e53e3d06a95b133e20f17550d6
+---
+ WebPlatformSearchAutocomplete.php                  |  9 ++---
+ includes/WebPlatformSearchAutocompleteHooks.php    | 36 +------------------
+ .../ext.webPlatformSearchAutocomplete.core.css     | 25 ++++++++++----
+ .../ext.webPlatformSearchAutocomplete.core.js      | 40 ++--------------------
+ 4 files changed, 26 insertions(+), 84 deletions(-)
+
+diff --git a/WebPlatformSearchAutocomplete.php b/WebPlatformSearchAutocomplete.php
+index dd91d65..f76822c 100644
+--- a/WebPlatformSearchAutocomplete.php
++++ b/WebPlatformSearchAutocomplete.php
+@@ -11,10 +11,10 @@ EOT;
+ $wgExtensionCredits['api'][] = array(
+ 	'path'           => __FILE__,
+ 	'name'           => 'WebPlatformSearchAutocomplete',
+-	'author'         => '[http://www.hallowelt.biz Hallo Welt! Medienwerkstatt GmbH]; Robert Vogel',
+-	'url'            => 'http://www.hallowelt.biz',
++	'author'         => array('[http://renoirboulanger.com Renoir Boulanger]', '[http://www.hallowelt.biz Hallo Welt! Medienwerkstatt GmbH]; Robert Vogel'),
++	'url'            => 'https://docs.webplatform.org/wiki/WPD:Infrastructure/Components/SearchAutocomplete',
+ 	'descriptionmsg' => 'webplatformsearchautocomplete-desc',
+-	'version'        => '1.1.0',
++	'version'        => '1.2.0',
+ );
+ 
+ $dir = dirname(__FILE__) . '/';
+@@ -27,9 +27,6 @@ $wgExtensionMessagesFiles['WebPlatformSearchAutocomplete'] = $dir . 'WebPlatform
+ $wgAPIModules['webplatformsearch'] = 'ApiWebPlatformSearch';
+ 
+ $wgHooks['BeforePageDisplay'][] = 'WebPlatformSearchAutocompleteHooks::onBeforePageDisplay';
+-$wgHooks['UserGetDefaultOptions'][] = 'WebPlatformSearchAutocompleteHooks::onUserGetDefaultOptions';
+-$wgHooks['UserLoadOptions'][] = 'WebPlatformSearchAutocompleteHooks::onUserLoadOptions';
+-$wgHooks['GetPreferences'][] = 'WebPlatformSearchAutocompleteHooks::onGetPreferences';
+ 
+ $wgResourceModules['ext.WebPlatformSearchAutocomplete'] = array(
+ 	'scripts'       => array( 'resources/ext.webPlatformSearchAutocomplete.core.js' ),
+diff --git a/includes/WebPlatformSearchAutocompleteHooks.php b/includes/WebPlatformSearchAutocompleteHooks.php
+index 6edf501..80bfc2f 100644
+--- a/includes/WebPlatformSearchAutocompleteHooks.php
++++ b/includes/WebPlatformSearchAutocompleteHooks.php
+@@ -2,47 +2,13 @@
+ 
+ class WebPlatformSearchAutocompleteHooks {
+ 	/**
+-	 * 
+ 	 * @param OutputPage $out
+ 	 * @param SkinTemplate $skin
+ 	 * @return bool Always true to keep hook running
+ 	 */
+ 	public static function onBeforePageDisplay( &$out, &$skin ) {
+-		if( $out->getUser()->getOption( 'wpddisablesuggest', false ) ) return true;
+ 		$out->addModules( 'ext.WebPlatformSearchAutocomplete' );
+ 		return true;
+ 	}
++}
+ 
+-	/**
+-	 * 
+-	 * @param array $defaultOptions
+-	 * @return boolean
+-	 */
+-	public static function onUserGetDefaultOptions( &$defaultOptions ) {
+-		$defaultOptions['disablesuggest'] = true;
+-		return true;
+-	}
+-	
+-	/**
+-	 * 
+-	 * @param type $user
+-	 * @param array $options
+-	 * @return boolean
+-	 */
+-	public static function onUserLoadOptions( $user, &$options ) {
+-		$options['disablesuggest'] = true;
+-		return true;
+-	}
+-	
+-	/**
+-	 * 
+-	 * @param type $user
+-	 * @param type $preferences
+-	 * @return boolean
+-	 */
+-	public static function onGetPreferences( $user, &$preferences ) {
+-		$preferences['wpddisablesuggest'] = $preferences['disablesuggest'];
+-		unset($preferences['disablesuggest']);
+-		return true;
+-	}
+-}
+\ No newline at end of file
+diff --git a/resources/ext.webPlatformSearchAutocomplete.core.css b/resources/ext.webPlatformSearchAutocomplete.core.css
+index e43d4d4..f97be76 100644
+--- a/resources/ext.webPlatformSearchAutocomplete.core.css
++++ b/resources/ext.webPlatformSearchAutocomplete.core.css
+@@ -1,12 +1,13 @@
+ /*HINT: jquery-ui-1.8.24/development-bundle/demos/index.html#autocomplete|categories*/
+ .ui-autocomplete-category {
+-	font-weight: bold;
+-	padding: 3px 5px;
++	padding: 4px 10px;
+ 	margin: 5px 0 3px 0;
+ 	line-height: 1.5;
+ 	float: left;
+ 	width: 100%;
+ 	color: white;
++	text-shadow: 0 1px 1px rgba(0,0,0,.4);
++	font: bold 120%/1.3 Bitter, Gudea, serif;
+ }
+ 
+ .ui-autocomplete-category:first-child {
+@@ -35,22 +36,34 @@
+ 	padding-top: 2px;
+ }
+ 
++.ui-widget {
++	font-family: inherit;
++}
+ 
+ .ui-widget-content {
+ 	background: #fff;
+ }
+ 
+ .ui-menu {
+-	padding: 0px  10px 0 0 
++	padding: 0;
++	box-shadow: 2px 3px 10px rgba(0,0,0,.3);
+ }
+ 
+-.ui-menu-item {
++.ui-menu .ui-menu-item {
+ 	cursor: pointer;
++	margin: 0 5px;
++	width: auto;
++	float: none;
+ }
+ 
+ .ui-state-hover {
+-	background: #fcfcfc !important;
++	background: #263C81 !important;
++	color: white !important;
+ 	border: none !important;
+ 	font-weight: bold !important;
+ 	margin: 0 !important;
+-}
+\ No newline at end of file
++}
++
++#mw-head .suggestions {
++	display: none !important; /* Hide the default MediaWiki search suggestion */
++}
+diff --git a/resources/ext.webPlatformSearchAutocomplete.core.js b/resources/ext.webPlatformSearchAutocomplete.core.js
+index 342ba09..796fdf0 100644
+--- a/resources/ext.webPlatformSearchAutocomplete.core.js
++++ b/resources/ext.webPlatformSearchAutocomplete.core.js
+@@ -3,43 +3,9 @@
+  * @author Robert Vogel
+  */
+ 
+-(function( $, undefined ) {
+-	$.widget( "wpd.catcomplete", $.ui.autocomplete, {
+-		_renderMenu: function( ul, items ) {
+-			var self = this,
+-				currentCategory = "",
+-				currentCategoryColor = 0,
+-				categoryColors = [ '#f19620', '#d24839', '#654d97', '#31b0bc' ];
+-
+-			$.each( items, function( index, item ) {
+-				if ( item.category != currentCategory ) {
+-					if( currentCategoryColor >= categoryColors.length ) {
+-						currentCategoryColor = 0;
+-					}
+-					$( "<li></li>" )
+-						.addClass('ui-autocomplete-category')
+-						.css( 'background-color', categoryColors[currentCategoryColor] )
+-						.data( "item.autocomplete", item )
+-						.text( item.category )
+-						.appendTo( ul );
+-
+-					currentCategory = item.category;
+-					currentCategoryColor++;
+-				}
+-				self._renderItem( ul, item );
+-			});
+-
+-			$( "<li><a>"+mw.msg( 'searchsuggest-containing' )+"<br/><em>" + self.element.val() + "</em></a></li>" )
+-				.addClass('ui-autocomplete-result-current')
+-				.data( "item.autocomplete", { value: this.element.val() } )
+-				.appendTo( ul );
+-		}
+-	});
+-}(jQuery));
+-	
+ ( function( mw, $ ) {
+ 	var searchApiUrl = mw.util.wikiScript( 'api' ) + '?' + $.param({ format: 'json', action: 'webplatformsearch' });
+-	$( "#searchInput" ).catcomplete({
++	$( "#searchInput" ).autocomplete({
+ 		delay: 100,
+ 		minLength: 3,
+ 		source: function( request, response ) {
+@@ -67,10 +33,10 @@
+ 		select: function(event, ui) {
+ 			if( ui.item.fullTitle ) {
+ 				event.preventDefault();
+-				window.location.href = mw.util.wikiGetlink( ui.item.fullTitle );
++				window.location.href = mw.util.getUrl( ui.item.fullTitle );
+ 				return;
+ 			}
+-			
++
+ 			if( ui.item.value ) { //"contains..."-menu item
+ 				$(this).parents('form').submit();
+ 				return;
+-- 
+1.9.3 (Apple Git-50)
+
